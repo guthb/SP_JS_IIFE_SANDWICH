@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IFFE Sandwich Exercise</title>
+</head>
+<body>
+<h1> BeeRad's Sandwich Emporium</h1>
+
+
+
+<!-- Requirement 1  provide a section that contains the input choice as a radio button and the
+and the sub level child elements as check boxes-->
+<section id = "picker">  
+  <div>
+    <input type="checkbox" id="checkBoxBread" value="Bread"/> <label for="checkbox">Yo! Wanna some Bread?</label>
+    <ul class="checkBoxListOne">    
+      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Wheat</label></li>
+      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Rye</label></li>
+      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Sourdough</label></li>
+    </ul>
+  </div>
+  
+  <div>
+    <input type="checkbox" id="checkBoxBread" value="Meat"/> <label for="checkbox">Hey! We got the meats!</label>
+    <ul class="checkBoxListTwo">    
+      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Balonaga</label></li>
+      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Salami</label></li>
+      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Chicken</label></li>
+    </ul>
+  </div>
+
+  <div>
+    <input type="checkbox" id="checkBoxCheese" value="Cheese"/> <label for="checkbox">No   Way you want Cheese?</label>
+    <ul class="checkBoxListThree">    
+      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Harvarti</label></li>
+      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Swiss</label></li>
+      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Limburger</label></li>
+    </ul>
+  </div>
+
+  <div>
+    <input type="checkbox" id="checkBoxStuff" value="stuff"/> <label for="checkbox">Special Sauces..yeah.</label>
+      <ul class="checkBoxListFour">    
+        <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Oil</label></li>
+        <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Vinegar</label></li>
+        <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Dijon Mustard</label></li>
+      </ul>
+  </div>
+
+  <div>
+    <input type="checkbox" id="checkBoxVeggies" value="Veggies"/> <label for="checkbox">Mamma Said you need to eat these!</label>
+    
+      <ul class="checkBoxListFive">    
+        <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Cucumbers</label></li>
+        <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Slaw</label></li>
+        <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Pickles</label></li>
+      </ul>
+  </div>
+
+
+</section>
+<h3> Here is your Order</h3>
+
+<div id"outputSandwich"></div> 
+
+ 
+<script type="text/javascript"  src="javascripts/SandwichMaker.js"></script>
+<script type="text/javascript"  src="javascripts/bread.js"></script>
+<script type="text/javascript"  src="javascripts/meat.js"></script>
+<script type="text/javascript"  src="javascripts/cheese.js"></script>
+<script type="text/javascript"  src="javascripts/condiments.js"></script>
+<script type="text/javascript"  src="javascripts/veggies.js"></script>
+</body>
+</html>
