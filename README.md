@@ -10,7 +10,7 @@ This is a sandwich order form that allows the user to select all the ingredients
 + veggies
 
 ### Screenshots
-![Screenshot](/img/sammage.png)
+![Screenshot](/imgs/sammage.png)
 
 
 

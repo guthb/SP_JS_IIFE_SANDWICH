@@ -7,62 +7,75 @@
 <body>
 <h1> BeeRad's Sandwich Emporium</h1>
 
+<!-- Requirement 1 - 3 
+a section of options for each sandwich part
+the ability to select multiple, or zero, choices for each section 
+an empty DOM element into which the final sandwich order and its cost will be inserted
 
-
-<!-- Requirement 1  provide a section that contains the input choice as a radio button and the
+I will provide a section that contains the input choice as a radio button and the
 and the sub level child elements as check boxes-->
 <section id = "picker">  
-  <div>
-    <input type="checkbox" id="checkBoxBread" value="Bread"/> <label for="checkbox">Yo! Wanna some Bread?</label>
+  <div id="bread">
+    <input type="checkbox" id="checkBoxBread" value=Bread/> <label for="checkbox">Yo! Wanna some Bread?</label>
     <ul class="checkBoxListOne">    
-      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Wheat</label></li>
-      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Rye</label></li>
-      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Sourdough</label></li>
-      <li><input type="checkbox" id="checkBoxFour" value="fourth_checkbox"/> <label  for="checkBoxThree">None</label></li>
+      <li><input type="checkbox" id="wheat" value=wheat>Wheat</li>
+      <li><input type="checkbox" id="rye" value=rye>Rye</li>
+      <li><input type="checkbox" id="sourdough" value=sourdough>Sourdough</li>
+      <li><input type="checkbox" id="noBread" value=none>None</li>
     </ul>
   </div>
   
-  <div>
-    <input type="checkbox" id="checkBoxBread" value="Meat"/> <label for="checkbox">Hey! We got the meats!</label>
-    <ul class="checkBoxListTwo">    
-      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Balonaga</label></li>
-      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Salami</label></li>
-      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Chicken</label></li>
-      <li><input type="checkbox" id="checkBoxFour" value="fourth_checkbox"/> <label  for="checkBoxThree">None</label></li>
+  <div id="meat">
+    <input type="checkbox" id="checkBoxMeat" value="Meat"/> <label for="checkbox">Hey! We got the meats!</label>
+    <ul class="checkBoxListTwo">       
+      <li><input type="checkbox" id="baloney" value=balonaga>Balonaga</li>
+      <li><input type="checkbox" id="salami" value=salami>Salami</li>
+      <li><input type="checkbox" id="chicken" value=chicken>Chicken</li>
+      <li><input type="checkbox" id="noMeat" value=none>None</li>
     </ul>
   </div>
 
-  <div>
-    <input type="checkbox" id="checkBoxCheese" value="Cheese"/> <label for="checkbox">No   Way you want Cheese?</label>
-    <ul class="checkBoxListThree">    
-      <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Harvarti</label></li>
-      <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Swiss</label></li>
-      <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Limburger</label></li>
-      <li><input type="checkbox" id="checkBoxFour" value="fourth_checkbox"/> <label  for="checkBoxThree">None</label></li>
+  <div id="cheese">
+    <input type="checkbox" id="checkBoxCheese" value="Cheese"/> <label for="checkbox">No Way!..... you want Cheese?</label>
+    <ul class="checkBoxListThree">       
+      <li><input type="checkbox" id="harvarti" value=harvarti>Harvarti</li>
+      <li><input type="checkbox" id="swiss" value=swiss>Swiss</li>
+      <li><input type="checkbox" id="limburger" value=limburger>Limburger</li>
+      <li><input type="checkbox" id="noCheese" value=none>None</li>
     </ul>
   </div>
 
-  <div>
-    <input type="checkbox" id="checkBoxStuff" value="stuff"/> <label for="checkbox">Special Sauces..yeah.</label>
-      <ul class="checkBoxListFour">    
+  <div id="veggies">
+    <input type="checkbox" id="checkBoxVeggies" value="Veggies"/> <label for="checkbox">Mamma said you need to eat these!</label>
+    <ul class="checkBoxListFour">       
+      <li><input type="checkbox" id="cucumber" value=cucumber>Cucumber</li>
+      <li><input type="checkbox" id="slaw" value=slaw>Slaw</li>
+      <li><input type="checkbox" id="pickles" value=pickles>Pickles</li>
+      <li><input type="checkbox" id="noVeggies" value=none>None</li>
+    </ul>
+  </div>
+ 
+ <div id="stuff">
+    <input type="checkbox" id="checkBoxStuff" value="stuff"/> <label for="checkbox">Special Sauces..yeah we got 'em.</label>
+    <ul class="checkBoxListFive">       
+      <li><input type="checkbox" id="oil" value=oil>Oil</li>
+      <li><input type="checkbox" id="vinigar" value=vinigar>Vinigar</li>
+      <li><input type="checkbox" id="dijonmustard" value=dijonmustard>Dijon Mustard</li>
+      <li><input type="checkbox" id="noStuff" value=none>None</li>
+    </ul>
+
+
+
+
+
+
+      <ul class="checkBoxListFive">    
         <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Oil</label></li>
         <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Vinegar</label></li>
         <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Dijon Mustard</label></li>
         <li><input type="checkbox" id="checkBoxFour" value="fourth_checkbox"/> <label  for="checkBoxThree">None</label></li>
       </ul>
   </div>
-
-  <div>
-    <input type="checkbox" id="checkBoxVeggies" value="Veggies"/> <label for="checkbox">Mamma Said you need to eat these!</label>
-    
-      <ul class="checkBoxListFive">    
-        <li><input type="checkbox" id="checkBoxOne" value="first_checkbox"/> <label for="checkBoxOne">Cucumbers</label></li>
-        <li><input type="checkbox" id="checkBoxTwo" value="second_checkbox"/> <label for="checkBoxTwo">Slaw</label></li>
-        <li><input type="checkbox" id="checkBoxThree" value="third_checkbox"/> <label  for="checkBoxThree">Pickles</label></li>
-        li><input type="checkbox" id="checkBoxFour" value="fourth_checkbox"/> <label  for="checkBoxThree">None</label></li>
-      </ul>
-  </div>
-
 
 </section>
 <h3> Here is your Order</h3>
@@ -74,7 +87,7 @@ and the sub level child elements as check boxes-->
 <script type="text/javascript"  src="javascripts/bread.js"></script>
 <script type="text/javascript"  src="javascripts/meat.js"></script>
 <script type="text/javascript"  src="javascripts/cheese.js"></script>
-<script type="text/javascript"  src="javascripts/condiments.js"></script>
+<script type="text/javascript"  src="javascripts/stuff.js"></script>
 <script type="text/javascript"  src="javascripts/veggies.js"></script>
 </body>
 </html>
