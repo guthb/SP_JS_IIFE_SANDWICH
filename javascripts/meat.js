@@ -6,6 +6,7 @@
 //That argument's value should be the ingredient selected by the user.
 var SandwichMaker = (function(maker){
   // Private variable to store the different meat prices as an object
+  console.log("In Meats" );
   var meatPrices={
     "balonaga":3.25,
     "salami":1.35,
