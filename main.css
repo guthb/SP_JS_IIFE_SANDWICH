@@ -1,1 +1,119 @@
-/*work with Flexbox to style the HTML*/
+body{
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+h1, h3{
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;    
+  color: #00539F;
+}
+
+#bread {
+  text-align: center;
+}
+
+#bread ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#bread li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+#meat {
+  text-align: center;
+}
+
+#meat ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#meat li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+#cheese {
+  text-align: center;
+}
+
+#cheese ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#cheese li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+#veggies{
+  text-align: center;
+}
+
+#veggies ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#veggies li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+
+#stuff {
+  text-align: center;
+}
+
+#stuff ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#stuff li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+#outputSandwich{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
