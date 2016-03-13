@@ -13,7 +13,38 @@ var breadChooser = document.getElementById("bread");
 var sandwichDom = document.getElementById("outputSandwich") //dom location for price
 console.log("in DOM Handler" );
 
- // Add the topping to the SandwichMaker to increase the total price
+ 
+/*  A <checkbox> element broadcasts a change event, so you listen for it
+and get the value of the topping from your augmented IIFE
+grab the cost from the checkbox through IIFE and pricing function */
+meatChooser.addEventListener("change", function(event){
+console.log("Dom Handler for Meat" );
+var priceCaptured = SandwichMaker.addTopping("addMeat", event);
+  buildSandwichCost(priceCaptured)
+  console.log("meatChooser", priceCaptured);
+  
+});
+
+//add addtional choosers:
+cheeseChooser.addEventListener("change", function(event){
+console.log("Dom Handler for Cheese" );
+var priceCaptured = SandwichMaker.addTopping("addCheese", event);
+  buildSandwichCost(priceCaptured)
+  console.log("cheeseChooser", priceCaptured);  
+});
+
+
+
+
+
+
+
+
+
+
+
+// Determine the price of the topping chosen
+// Add the topping to the SandwichMaker to increase the total price
 function buildSandwichCost(updatedCost){
   console.log("in Build Sandwich" );
   finalSandwichPrice = updatedCost;
@@ -22,22 +53,5 @@ function buildSandwichCost(updatedCost){
   sandwichDom.textContent = finalSandwichPrice;
   console.log("built sandwich",finalSandwichPrice );
 };
-
-/*  A <checkbox> element broadcasts a change event, so you listen for it
-and get the value of the topping from your augmented IIFE
-grab the cost from the checkbox through IIFE and pricing function */
-meatChooser.addEventListener("change", function(event){
-console.log("Dom Handler for Meat" );
-var priceCaptured = SandwichMaker.addTopping('addMeat', event);
-  buildSandwichCost(priceCaptured)
-  console.log("meatChooser", priceCaptured);
-  // Determine the price of the topping chosen
-});
-
-//add addtional choosers:
-
-
-
-
 
 
