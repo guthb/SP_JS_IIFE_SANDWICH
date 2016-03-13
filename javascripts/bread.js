@@ -5,6 +5,7 @@
 //named add{ingredient} that accepts a single argument. 
 //That argument's value should be the ingredient selected by the user.
 var SandwichMaker = (function(maker){
+  console.log("In Bread");
   // Private variable to store the different bread prices as an object
   var breadPrices={
     "wheat":0.35,
@@ -17,7 +18,7 @@ var SandwichMaker = (function(maker){
   // on the sandwich with the price from the private object
   // through this public interface
   maker.addBread = function(checkedDomBread){
-    return breadPrices[chekedDomBread];
+    return breadPrices[checkedDomBread];
   }
   //this is the getter method as it returns the cheese prices
   maker.getBread = function(){

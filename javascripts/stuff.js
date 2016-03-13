@@ -5,11 +5,12 @@
 //named add{ingredient} that accepts a single argument. 
 //That argument's value should be the ingredient selected by the user.
 var SandwichMaker = (function(maker){
+  console.log("In Stuff" );
   // Private variable to store the different stuff prices as an object
   var stuffPrices={
     "oil":0.10,
     "vinegar":0.15,
-    "dijionMustard":0.35,
+    "dijonMustard":0.35,
     "none":0.0
   };
   // this is a setter method, it is setting a new property
