@@ -5,6 +5,7 @@
 //named add{ingredient} that accepts a single argument. 
 //That argument's value should be the ingredient selected by the user.
 var SandwichMaker = (function(maker){
+  console.log("In Veggies");
   // Private variable to store the different veggie prices as an object
   var veggiePrices = {
     "cucumber":0.75,

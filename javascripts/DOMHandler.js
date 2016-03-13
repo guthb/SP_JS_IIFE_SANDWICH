@@ -7,7 +7,7 @@ var finalSandwichPrice = 0;
 // Get a reference to the <select> element that has all the sandwich options
 var meatChooser = document.getElementById("meat");
 var stuffChooser = document.getElementById("stuff");
-var veggieChooser = document.getElementById("veggie");
+var veggieChooser = document.getElementById("veggies");
 var cheeseChooser = document.getElementById("cheese");
 var breadChooser = document.getElementById("bread");
 var sandwichDom = document.getElementById("outputSandwich") //dom location for price
@@ -21,24 +21,29 @@ meatChooser.addEventListener("change", function(event){
 console.log("Dom Handler for Meat" );
 var priceCaptured = SandwichMaker.addTopping("addMeat", event);
   buildSandwichCost(priceCaptured)
-  console.log("meatChooser", priceCaptured);
-  
+  console.log("meatChooser", priceCaptured); 
 });
 
 //add addtional choosers:
+//cheese
 cheeseChooser.addEventListener("change", function(event){
 console.log("Dom Handler for Cheese" );
 var priceCaptured = SandwichMaker.addTopping("addCheese", event);
   buildSandwichCost(priceCaptured)
   console.log("cheeseChooser", priceCaptured);  
 });
+//veggies
+veggieChooser.addEventListener("change", function(event){
+console.log("Dom Handler for Veggies" );
+var priceCaptured = SandwichMaker.addTopping("addVeggie", event);
+  buildSandwichCost(priceCaptured)
+  console.log("cheeseChooser", priceCaptured);  
+});
+//stuff
 
 
 
-
-
-
-
+//bread
 
 
 
